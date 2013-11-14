@@ -17,13 +17,6 @@ $sql = "UPDATE contacto ".
 
 $query = mysql_query( $sql, $conexion );
 
-if (!mysqli_query($conexion,$sql))
-  {
-  die('Error: ' . mysqli_error($conexion));
-  }
-
-
-//	header ("Location:editar.php?id=$id");
 
 
 header( 'Location: actualizar_contacto.php?exito=si' );
