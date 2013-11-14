@@ -20,6 +20,7 @@ while($row = mysqli_fetch_array($datos))
 	<?php include_once "head.php"; ?>
 </head>
 <body>
+	<?php include_once "menu.php"; ?>
 <form action="actualiza_contacto.php" method="POST">
 	<label>direccion</label> 
 	<input type="text" value='<?php echo $direccion ?>' id="direccion" name="direccion"></input><br />
